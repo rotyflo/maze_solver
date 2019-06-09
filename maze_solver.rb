@@ -1,6 +1,6 @@
 class MazeSolver
-  def initialize(maze)
-    @maze = maze
+  def initialize
+    @maze = ARGV[0]
   end
 
   def solve
@@ -14,5 +14,5 @@ class MazeSolver
   end
 end
 
-maze_solver = MazeSolver.new("maze1.txt")
+maze_solver = MazeSolver.new
 maze_solver.solve
